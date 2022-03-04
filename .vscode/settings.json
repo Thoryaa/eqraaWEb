@@ -1,0 +1,10 @@
+{
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false
+}
