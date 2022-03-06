@@ -6,5 +6,6 @@
     "editor.autoClosingBrackets": "never",
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
-    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": false,
+    "editor.formatOnSave": true
 }

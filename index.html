@@ -1,11 +1,13 @@
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assests/css/style.css">
     <title>Eqra</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js" integrity="sha512-ELgdXEUQM5x+vB2mycmnSCsiDZWQYXKwlzh9+p+Hff4f5LA+uf0w2pOp3j7UAuSAajxfEzmYZNOOLQuiotrt9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -230,6 +232,7 @@
         </div>
         <!-----------------------عروض مخفضة-->
         <main>
+
             <div>
                 <div class="book-title">
                     <span>عروض مخفضة</span>
@@ -249,7 +252,11 @@
                         <div class="book-card">
                             <img src="assests/img/1642416191030.jpg" alt="" height="150">
                             <div class=" book-detail">
-                                <h4>Spring Book</h4>
+                                <h4>nn Book</h4>
+                                <div class="operation-icon">
+                                    <ion-icon name="create-outline" class="icon edits" data-id="${id}" id="edits"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon delets" data-id="${id}" id="delets"></ion-icon>
+                                </div>
                                 <div>
                                     <p> <span class="price">1500</span><span>ريال</span>
                                     </p>
@@ -408,7 +415,7 @@
                             </defs>
                             <use xlink:href="#right_arrow " stroke="#9A9B9C " fill="#AEAFB1 "></use>
                             </svg>
-                    <div class="book-container" id="card_containers">
+                    <div class="book-container products" id="card_containers">
 
 
                     </div>
@@ -426,8 +433,9 @@
 
 
     </div>
-    <button id="model-btn"> create oroduct</button>
-    <div class="model-container">
+
+    <button id="model-btn"> create product</button>
+    <div class="model-container" id="sortlist">
         <div class="model">
             <h3>product</h3>
             <label for="pname">product name</label>
@@ -627,9 +635,16 @@
 
         </div>
     </footer>
+    <script>
+        let dragMoving = document.getElementById("card_containers");
+        new Sortable(dragMoving, {
+            animation: 300,
+        });
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="assests/js/script.js "></script>
+
 </body>
 
 </html>
